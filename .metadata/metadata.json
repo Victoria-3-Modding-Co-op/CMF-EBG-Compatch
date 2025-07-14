@@ -1,12 +1,14 @@
 {
-  "name": "CMF and EBG Compatch",
+  "name": "[1.9] CMF and EBG Compatch",
   "id": "com.github.Victoria-3-Modding-Co-op.CMF-EBG-Compatch",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "game_id": "victoria3",
   "picture": "thumbnail.png",
   "supported_game_version": "1.9.*",
   "short_description": "This mod implements compatability between CMF and EPG.",
-  "tags": [],
+  "tags" : [
+    "1.9"
+  ],
   "relationships": [
     {
       "rel_type": "dependency",
