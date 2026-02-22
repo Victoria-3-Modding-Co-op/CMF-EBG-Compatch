@@ -340,7 +340,7 @@ types com_state_panel_buildings_overwrites {
 					visible = "[GreaterThan_int32(StatesPanel.AccessBuilding('building_trade_center').GetExpansionLevel, '(int32)0')]"
 				}
 
-				header_building_item = {
+				expanded_building_grid_header_trade_building_item = {
 					visible = "[GreaterThan_int32(Building.GetExpansionLevel, '(int32)0')]"
 					datacontext = "[StatesPanel.AccessBuilding('building_trade_center')]"
 
@@ -638,7 +638,7 @@ types com_state_panel_buildings_overwrites {
 
 						header_building_item = {
 							visible = no
-							datacontext = "[StatesPanel.AccessBuilding('building_barracks')]"
+							datacontext = "[StatesPanel.AccessBuilding('building_barrack')]"
 
 							tooltipwidget = {
 								FancyTooltip_Building = {}
@@ -708,7 +708,7 @@ types com_state_panel_buildings_overwrites {
 			parentanchor = hcenter
 
 			buildings_list_item = {
-				datacontext = "[StatesPanel.AccessBuilding('building_barracks')]"
+				datacontext = "[StatesPanel.AccessBuilding('building_barrack')]"
 			}
 
 			buildings_list_item = {
