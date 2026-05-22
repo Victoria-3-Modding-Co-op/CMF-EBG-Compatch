@@ -1,7 +1,7 @@
 {
   "name": "[1.13] CMF and EBG Compatch",
   "id": "com.github.Victoria-3-Modding-Co-op.CMF-EBG-Compatch",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "game_id": "victoria3",
   "picture": "thumbnail.png",
   "supported_game_version": "1.13.*",
