@@ -557,23 +557,31 @@ types com_state_panel_buildings_overwrites {
 			using = default_content_fade
 			minimumsize = { @panel_width -1 }
 			using = default_list_position
-			margin_top = 10
 			direction = vertical
 			spacing = 10
 
-			### UNUSED ARABLE LAND
-			expanded_building_grid_header_building_item = {
+			flowcontainer = {
+				parentanchor = hcenter
+				direction = vertical
 
-				tooltipwidget = {
-					FancyTooltip_Building = {}
+				divider_clean = {}
+
+				### UNUSED ARABLE LAND
+				expanded_building_grid_header_building_item = {
+
+					tooltipwidget = {
+						FancyTooltip_Building = {}
+					}
+
+					#tooltip = "LAND_TEXT_TOOLTIP"
+					datacontext = "[StatesPanel.AccessSubsistenceBuilding]"
+
+					blockoverride "text" {
+						text = "UNUSED_ARABLE"
+					}
 				}
 
-				#tooltip = "LAND_TEXT_TOOLTIP"
-				datacontext = "[StatesPanel.AccessSubsistenceBuilding]"
-
-				blockoverride "text" {
-					text = "UNUSED_ARABLE"
-				}
+				divider_clean = {}
 			}
 
 			fixedgridbox = {
@@ -667,14 +675,14 @@ types com_state_panel_buildings_overwrites {
 
 						header_building_item = {
 							visible = no
-							datacontext = "[StatesPanel.AccessBuilding('building_naval_base')]"
+							datacontext = "[StatesPanel.AccessBuilding('building_naval_administration')]"
 
 							tooltipwidget = {
 								FancyTooltip_Building = {}
 							}
 
 							blockoverride "text" {
-								text = "TOTAL_NAVAL_BASE"
+								text = "TOTAL_NAVAL_ADMINISTRATION"
 							}
 						}
 
@@ -708,15 +716,11 @@ types com_state_panel_buildings_overwrites {
 			parentanchor = hcenter
 
 			buildings_list_item = {
-				datacontext = "[StatesPanel.AccessBuilding('building_barrack')]"
-			}
-
-			buildings_list_item = {
 				datacontext = "[StatesPanel.AccessBuilding('building_conscription_center')]"
 			}
 
 			buildings_list_item = {
-				datacontext = "[StatesPanel.AccessBuilding('building_naval_base')]"
+				datacontext = "[StatesPanel.AccessBuilding('building_naval_administration')]"
 			}
 
 			buildings_list = {
