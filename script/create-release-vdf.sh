@@ -21,7 +21,7 @@ else
   exit 1
 fi
 
-title=$(grep -Po '(?<=\s\"name\"\s:\s\").+(?=\",)' "$mod_path/.metadata/metadata.json")
+title=$(grep -Po '(?<=\s\"name\":\s\").+(?=\",)' "$mod_path/.metadata/metadata.json")
 
 # Read mod id
 if [ -n "$3" ]
